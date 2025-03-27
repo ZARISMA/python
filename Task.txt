@@ -1,0 +1,103 @@
+--------------------------------------------------------------------------------------------------------------------
+1.Integer to String Conversion (ft_itoa)
+
+Problem Statement:
+Write a function ft_itoa(n: int) -> str
+that converts an integer n to a string representation.
+You cannot use str() directly. The function should handle both positive and negative numbers.
+
+Constraints:
+You cannot use str() or other built-in conversion functions.
+The function must handle negative numbers correctly.
+The function should return a string, not an integer.
+
+Example:
+print(ft_itoa(123))  # Output: "123"
+print(ft_itoa(-42))  # Output: "-42"
+print(ft_itoa(0))  # Output: "0"
+print(ft_itoa(2147483647))  # Output: "2147483647"
+print(ft_itoa(-2147483648))  # Output: "-2147483648"
+
+--------------------------------------------------------------------------------------------------------------------
+2.Custom Split (ft_split)
+
+Problem Statement:
+Write a function ft_split(s: str, delim: str) -> list 
+that splits a string s into a list of words using delim as the separator.
+If delim appears consecutively, ignore empty substrings.
+
+Constraints:
+You cannot use Python's built-in .split().
+The delimiter is always a single character.
+
+Example: 
+print(ft_split("let's try it again", " "))
+Output: ["let's", 'try', 'it', 'again']
+
+--------------------------------------------------------------------------------------------------------------------
+3.Balanced Brackets 
+
+Problem Statement:
+Write a function is_balanced(s: str) -> bool 
+that checks if the given string s has balanced brackets.
+The brackets (), {}, and [] must be properly nested.
+
+Constraints:
+The input consists of only ()[]{} characters.
+You must use a stack-based approach.
+
+Example:
+print(is_balanced("()[]{}"))  # Output: True
+print(is_balanced("(]"))  # Output: False
+print(is_balanced("{[()]}"))  # Output: True
+
+--------------------------------------------------------------------------------------------------------------------
+4.String Compression
+
+Problem Statement:
+Implement a function compress(s: str) -> str 
+that compresses a string using the counts of repeated characters. 
+If compression doesn’t reduce the size, return the original string.
+
+Constraints:
+The string contains only lowercase letters.
+You must process the string in one pass.
+
+Example:
+print(compress("aabcccccaaa"))  # Output: "a2b1c5a3"
+print(compress("abcd"))  # Output: "abcd" (unchanged because it's not shorter)
+
+--------------------------------------------------------------------------------------------------------------------
+5.Majority Element
+
+Problem Statement:
+Given a list of numbers, find the majority element (the element that appears more than n/2 times).
+Assume that such an element always exists.
+
+Constraints:
+The list is non-empty.
+An O(n) solution is preferred (hint: use a dictionary or Boyer-Moore Voting Algorithm).
+
+Example:
+print(majority_element([3, 3, 4, 2, 3, 3, 3]))  # Output: 3
+print(majority_element([2, 2, 1, 1, 1, 2, 2]))  # Output: 2
+
+
+--------------------------------------------------------------------------------------------------------------------
+6.Next Greater Element
+
+Problem Statement:
+Given a list of numbers, find the next greater element for each element in the list.
+The next greater element of a number is the first larger number to its right.
+If no such number exists, return -1.
+
+Constraints:
+The list contains only positive integers.
+A monotonic stack approach is preferred (O(n) time complexity).
+
+Example:
+print(next_greater([4, 5, 2, 10]))    #Output: [5, 10, 10, -1]
+print(next_greater([3, 7, 1, 8, 4]))  #Output: [7, 8, 8, -1, -1]
+
+
+--------------------------------------------------------------------------------------------------------------------
